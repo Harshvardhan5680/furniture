@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <link rel="icon" href="https://ts1.mm.bing.net/th?id=OIP.383UxrR7ybe02zHYU0RS3QHaF0&pid=15.1" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section {
+            padding: 20px;
+            margin: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            background-color: #f9f9f9;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .product p {
+            text-align: center;
+            color: #777;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger Menu</title>
+  
+  <!-- Inline CSS for Hamburger Icon and Menu -->
+  <style>
+    /* Initial Navbar Setup */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+    }
+
+    /* Navigation Links */
+    .nav-container-big {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Hide Navbar Links on Mobile */
+    @media (max-width: 992px) {
+      .nav-container-big {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .navbar.menu-open .nav-container-big {
+        display: flex;
+      }
+
+      /* Hamburger Icon */
+      .hamburger-icon {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 6px 0;
+        transition: all 0.3s ease;
+      }
+
+      /* Hamburger Animation (X when clicked) */
+      .navbar.menu-open .hamburger-icon:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 10px;
+      }
+
+      .navbar.menu-open .hamburger-icon:nth-child(2) {
+        opacity: 0;
+      }
+
+      .navbar.menu-open .hamburger-icon:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <!-- Brand -->
+    <a href="/" class="brand w-nav-brand w--current" style="color: white;">Brand</a>
+    
+    <!-- Hamburger Icon -->
+    <div class="menu-button w-nav-button" style="cursor: pointer;" onclick="toggleMenu()">
+      <div class="hamburger-icon"></div>
+      <div class="hamburger-icon"></div>
+      <div class="hamburger-icon"></div>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-container-big">
+      <a href="/" class="nav-link">Home</a>
+      <a href="https://harshvardhan5680.github.io/about-me/" class="nav-link">About</a>
+      <a href="https://harshvardhan5680.github.io/Gallery-/" class="nav-link">Gallery</a>
+      <a href="https://harshvardhan5680.github.io/RESUME/" target="_blank" class="nav-link">Resume</a>
+    </div>
+  </div>
+/art-mor
+  <!-- Inline JavaScript to Toggle Menu -->
+  <script>
+    function toggleMenu() {
+      // Toggle the 'menu-open' class to show or hide the navigation links
+      document.querySelector('.navbar').classList.toggle('menu-open');
+    }
+  </script>
+
+</body>
+</html>
+
+<body>
+
+
+<header>
+    <h1>Furniture Store</h1>
+    <p>Your one-stop shop for quality furniture</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Our Furniture Store</h2>
+    <p>We offer a wide range of high-quality furniture for every room in your home. Explore our collection of sofas, tables, chairs, and more!</p>
+</section>
+
+<section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Sofa">
+            <h3>Comfortable Sofa</h3>
+            <p>Price: $499</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Table">
+            <h3>Modern Dining Table</h3>
+            <p>Price: $299</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Chair">
+            <h3>Stylish Chair</h3>
+            <p>Price: $99</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>At Furniture Store, we are dedicated to providing top-quality furniture at affordable prices. Our team of experts handpicks each piece to ensure the best in design, durability, and comfort.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out to us!</p>
+    <p>Email: contact@furniturestore.com</p>
+    <p>Phone: +1 234 567 890</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Furniture Store. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
